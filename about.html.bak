@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Matthieu Delaere - Portfolio</title>
+<link href="ccs/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>	
+	<div class="HeaderBackground">
+		<a href="index.html">
+			<p class="Name">TROY HANCOCK</p>
+			<p class="Title">GAMEPLAY / GRAPHICS PROGRAMMER</p>
+		</a>
+	</div>
+	<div class="HeaderIconContainer">
+		<a href="mailto:matthieu.delaere@hotmail.com">
+			<img class="HeaderIcon" src="images/icons/email_fill_white.png" style="margin-left: 295px;" alt="email"/>
+		</a>
+		<a href="https://github.com/TheGoozah" target="_blank">
+			<img class="HeaderIcon" src="images/icons/github_fill_white.png" style="padding-left: 5px;" alt="github"/>
+		</a>
+		<a href="https://www.linkedin.com/in/matthieu-delaere/" target="_blank">
+			<img class="HeaderIcon" src="images/icons/linkedin_fill_white.png" style="padding-left: 5px;" alt="linkedIn"/>
+		</a>
+	</div>
+<div class="Navigation">
+		<hr class="NavigationSeperator">
+		<a href="index.html"><button class="NavigationButton">Portfolio</button></a>
+		<b>-</b>
+		<a href="about.html"><button class="NavigationButtonSelected">About</button></a>
+		<b>-</b>
+		<a href="MatthieuDelaereResume.pdf"><button class="NavigationButton">Resume</button></a>
+		<hr class="NavigationSeperator">
+	</div>
+<div class="AboutContent">
+	<div class="AboutContainer">
+		<!-- DESCRIPTION -->
+		<p class="AboutTitle">ABOUT ME:</p>
+		<div class="AboutRow">
+			<div class="AboutColumnLeft">
+				<div class="ProjectDescription">
+		  			<p>Hi there! I am a game developer from Atlanta, GA. I am currently working as a <b>Gameplay Programmer</b> at
+					<a href="http://lionheartgames.com/">Lionheart Games</a>. As a programmer I work with Unreal Engine 4 to produce abilities through unreal engine's GAS plugin, game physics, AI, and performance work.</p>
+		  			<!-- <p>I call myself a "how low can you go"-programmer, with a profound love for Graphics, Engine Architecture and Artificial Intelligence in games. My constant curiosity to analyze how things work, combined with my Research & Development mindset, is was drives me in this wonderful world and industry!</p> -->
+				</div>
+			</div>
+			<!-- <div class="AboutColumnRight"> -->
+				<!-- <img class="ProfilePicture" src="images/picture.jpg" alt="me"/> -->
+				<!-- <!--<img class="UnityRibbon" src="images/unitycertificationribbon.png" alt="UnityCertifiedDeveloper"/>--> -->
+			<!-- </div> -->
+		</div>
+		<p class="CareerTitle">SKILLS:</p>
+		<ul>
+			<li class="AboutCareerList">Coding Languages: C++, C#, Python, Javascript</li>
+			<li class="AboutCareerList">Programming APIs: OpenGL</li>
+			<li class="AboutCareerList">Commercial Game Engines: Unreal Engine 4, Unity3D, Godot</li>
+			<li class="AboutCareerList">Software: Visual Studio, Perforce, Git</li>
+			<li class="AboutCareerList">Multimedia Languages: HTML, CSS</li>
+		</ul>
+		
+		<!-- <p class="CareerTitle">CERTIFICATIONS:</p> -->
+		<!-- <ul> -->
+			<!-- <a href="http://matthieudelaere.com/166_3_13417_1464782284_Unity Certified Developer.pdf" target="_blank"> -->
+				<!-- <li class="AboutCareerList"><b class="AboutCareerListLink">Unity Certified Developer</b></li> -->
+			<!-- </a> -->
+		<!-- </ul> -->
+		<p class="CareerTitle">CAREER:</p>
+		<ul>
+			<li class="AboutCareerList">JAN 2020 - Present | <b>Gameplay / Graphics Programmer @ Lionheart Games</b>
+				<ul>
+					<li>Implementing all in game abilities through Unreal Engine's GAS plugin.</li>
+					<li>Writing new C++ gameplay frameworks for us to handle developing projectiles and bosses in a modular way going into the future.</li>
+					<li>Managing time dilation and creating a custom timer manager class to override Unreal Engine's native timer management.</li>
+					<li>Solving hitch on our mobile builds through PSO Caching, or creating a pipeline state object of precompiled shaders.</li>
+				</ul>
+			</li>
+			<!-- <br> -->
+		</ul>
+		<p class="CareerTitle">STUDIES:</p>
+		<ul>
+		    <li class="AboutCareerList">2014 - 2019 | <b>Bachelor of Arts in Philosophy - Georgia State University</b>
+				<ul><li>Graduated december of 2018 with a 3.7 GPA</li></ul>
+				<ul><li>President of Smash Club - hosted esports club meetings and gameplay tournaments. Secured funding for our club to travel to compete in tournaments and crew battles.</li></ul>
+				<ul><li>Tournament Organizer - hosted esports tournaments for super smash brothers melee.</li></ul>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+	
+</html>

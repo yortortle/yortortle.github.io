@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Troy Hancock- Portfolio</title>
+<link href="ccs/style.css" rel="stylesheet" type="text/css">
+<link href="ccs/gist.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.7.1/gist-embed.min.js"></script>
+</head>
+
+<body>
+	<script>
+		function GalleryOnClick(obj, url)
+		{
+			/*Swap to image of current selection*/
+			document.getElementById('preview').src= url;
+			/*Disable borders of all other thumbnails*/
+			var thumbnails = document.getElementsByClassName("Thumbnail");
+			for(var i = 0; i < thumbnails.length; ++i)
+			{
+				thumbnails[i].border = 0;
+			}
+			/*Enable this selections border*/
+			obj.border = 2;
+		}
+	</script>
+	
+	<div class="HeaderBackground">
+		<a href="index.html">
+			<p class="Name">TROY HANCOCK</p>
+			<p class="Title">GAMEPLAY / GRAPHICS PROGRAMMER</p>
+		</a>
+	</div>
+	<div class="HeaderIconContainer">
+		<a href="mailto:tnoblehancock@gmail.com">
+			<img class="HeaderIcon" src="images/icons/email_fill_white.png" style="margin-left: 295px;" alt="email"/>
+		</a>
+		<a href="https://github.com/Yortortle" target="_blank">
+			<img class="HeaderIcon" src="images/icons/github_fill_white.png" style="padding-left: 5px;" alt="github"/>
+		</a>
+		<a href="https://www.linkedin.com/in/troy-hancock/" target="_blank">
+			<img class="HeaderIcon" src="images/icons/linkedin_fill_white.png" style="padding-left: 5px;" alt="linkedIn"/>
+		</a>
+	</div>
+<div class="Navigation">
+		<hr class="NavigationSeperator">
+		<a href="index.html"><button class="NavigationButtonSelected">Portfolio</button></a>
+		<b>-</b>
+		<a href="about.html"><button class="NavigationButton">About</button></a>
+		<b>-</b>
+		<a href="TroyHancockResume.pdf"><button class="NavigationButton">Resume</button></a>
+		<hr class="NavigationSeperator">
+	</div>
+<div class="ProjectContent">
+	<a href="https://github.com/TheGoozah/CUDA_Ray_Tracer" target="_blank">
+		<img class="SourceCodeLogo" src="images/icons/github_source_fill_green.png" alt=""/>
+	</a>
+	<div class="ProjectContainer">
+		<!-- TITLE + SOFTWARE -->
+		<b class="ProjectBigTitle">CUDA Ray Tracer - C++ Graphics Programmer Course</b>
+			<img class="ProjectBigTitleSoftware" src="images/icons/vs_fill_white.png" alt=""
+						 style="padding-right: 5px"/>
+		<img class="ProjectBigTitleSoftware" src="images/icons/c++_fill_white.png" alt=""
+						 style="padding-right: 7px"/>
+		<p class="ProjectDetails">2019 - 2020   •  Digital Arts and Entertainment Course</p>
+		
+		<!-- GALLERY -->
+		<div class="ProjectGallery">
+			<div class="ProjectGalleryPreview">
+				<iframe class="Preview" id="preview" src="images/projects/raytracer/example2.png" width="894" height="525" frameborder="0" scrolling="no" marginwidth="0" marginheight="0"></iframe>
+			</div>
+			<div class="ProjectGalleryThumbnails">
+				<img class="Thumbnail" 
+				onMouseDown="GalleryOnClick(this, this.src)" name="img1" src="images/projects/raytracer/example2.png" alt="" border="2px"/>
+				<img class="Thumbnail" onMouseDown="GalleryOnClick(this,'images/projects/raytracer/example1.gif')" name="img1" src="images/projects/raytracer/example1.png" alt=""/>
+				<img class="Thumbnail" 
+				onMouseDown="GalleryOnClick(this, this.src)" name="img2" src="images/projects/raytracer/example5.png" alt=""/>
+				<img class="Thumbnail" 
+				onMouseDown="GalleryOnClick(this, this.src)" name="img2" src="images/projects/raytracer/example3.png" alt=""/>
+				<img class="Thumbnail" 
+				onMouseDown="GalleryOnClick(this, this.src)" name="img1" src="images/projects/raytracer/example4.png" alt=""/>
+			</div>
+		</div>
+		
+		<!-- DESCRIPTION -->
+		<p class="ProjectDescriptionTitle">DESCRIPTION:</p>
+		<div class="ProjectDescription">
+			<p>Since 2019 I am in charge of the Graphics Programming courses, while co-teaching them since 2015. During the Graphics Programming 1 course I teach the basics of Computer Graphics.
+			Before we used DirectX 11 to explain some of the core concepts. When remaking the course, I went back to the roots of Computer Graphics. Now we focus on:</p>
+			<ul>
+				<li class="ProjectConstributionList">visibility determination using both <b>ray tracing</b> and <b>rasterization</b>.</li>
+				<li class="ProjectConstributionList"><b>intersection algorithms</b> for spheres, planes, triangles and triangle meshes.</li>
+				<li class="ProjectConstributionList">the <b>Render Equation</b>, focusing on </b>direct lighting</b> and multiple <b>BRDF</b>'s (Lambert, Phong and CookTorrance).</li>
+			</ul>
+			<p>Students have to write their own <b>software ray tracer</b>, <b>software rasterizer</b> and a small <b>DirectX 11 render framework</b> from scratch in C++. They only get a few files for window handling and mathematics. While making all the classes, 
+			I've created another version of a ray tracer that supports: </p>
+			<ul>
+				<li class="ProjectConstributionList"><b>hardware acceleration</b> using <b>Nvidia's CUDA</b>.</li>
+				<li class="ProjectConstributionList"><b>progressive indirect lighting</b>, using <b>importance sampling</b> based on the BRDF.</li>
+			</ul>
+			<p>Below you can find some code samples from the project, which is available through the 
+			<a href="https://github.com/TheGoozah/CUDA_Ray_Tracer" target="_blank">github</a> link
+			. This project is still a work in progress and could be extended 
+			with several optimization techniques, transparency, triangle mesh support, etc. Some of the mentioned features are supported in the software version, which I can't share online
+			due to the fact that this is still actively used in classes.</p>
+		</div>
+		<hr class="ProjectSeperator">
+		
+		<p class="ProjectDescriptionTitle">CODE SNIPPETS:</p>
+		<div class="ProjectDescription">
+			<p>Below are code snippets of some of the most interesting parts of ray tracer. Feel free to analyze the entire github repository as well!</p>
+			<p><b><u>Tracer</u></b>: part of the heart of the ray tracer, using CUDA to run on the GPU. All data is allocated on the GPU but, due to optimzations performed by the CUDA compiler, <b>virtual functions</b> potentially caused issues. I avoided using virtual functions instead.</p>
+			<div class="gistheightwrapper"><script src="https://gist.github.com/TheGoozah/327f7a08ef77587a5f3aba707cf26757.js"></script>
+			</div>
+			
+			<p><b><u>Importance Sampling</u></b>: different sampling methods based on the BRDF's. References are in the code itself. Normalizations happen in the Tracer (see code sample above).</p>
+			<div class="gistheightwrapper"><script src="https://gist.github.com/TheGoozah/0d5616a028cbf214277111abb9f22f50.js"></script>
+			</div>
+			
+			<p><b><u>BRDF's</u></b>: different RDF's (Lambert, Phong and CookTorrance).</p>
+			<div class="gistheightwrapper"><script src="https://gist.github.com/TheGoozah/707d1a5eb017f80c0f4df90efdc50d97.js"></script>
+			</div>
+			
+			<p><b><u>Resource Buffer</u></b>: class to easily transfer memory from GPU to CPU and vice versa. It uses <b>Unified Virtual Addressing</b> to automatically figure out the location (GPU or CPU) of the referenced data. It also make memory management easier.</p>
+			<div class="gistheightwrapper"><script src="https://gist.github.com/TheGoozah/931579f43c4ef87cd8b2a8cd75d29354.js"></script>
+			</div>
+			
+		<hr class="ProjectSeperator">
+	</div>
+	</div>
+</div>
+</body>
+	
+</html>

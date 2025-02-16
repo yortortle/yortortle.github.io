@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+
+/*General*/
+body 
+{
+	background-color: #0a0a0a;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+b
+{
+	color: #D9D9D9;
+	-webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+	user-select: none;
+}
+
+p
+{
+	color: #D9D9D9;
+}
+
+/*Main Page*/
+.HeaderBackground 
+{
+	width: 100%;
+	height: 85px;
+	left: 0px;
+	top: 15px;
+	position: absolute;
+	align-items: center;
+	text-align: center;
+}
+
+.HeaderIconContainer
+{
+	position: relative; 
+	width: 100%;
+	height: 40px;
+}
+
+.HeaderIcon
+{
+	margin: 20px auto 0px auto;
+  	position: relative;
+	float: left;
+  	left: 50%;
+	width: 35px;
+}
+
+.Navigation 
+{
+	width: 100%;
+	height: 50px;
+	left: 0px;
+	top: 120px;
+	position: absolute;
+	align-items: center;
+	text-align: center;
+}
+
+.NavigationSeperator 
+{
+	border: 0px;
+	height: 1px;
+	width: 75%;
+	background-image: linear-gradient(to right, 
+		rgba(255, 255, 255, 0), 
+		rgba(255, 255, 255, 0.75), 
+		rgba(255, 255, 255, 0));
+}
+
+.NavigationButtonSelected
+{
+	font-family: 'Inter', sans-serif;
+	
+	/* line-height: 1.5; /* Adjust as needed */
+	
+	font-weight: 300;
+	font-size: 20px;
+	letter-spacing: 2px;
+	background: none;
+	border: 0;
+	margin: 0px 15px 0px 15px;
+	padding: 0px;
+	color: #86C232;
+}
+.NavigationButton 
+{
+	font-family: 'Inter', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	letter-spacing: 2px;
+	background: none;
+	border: 0;
+	margin: 0px 15px 0px 15px;
+	padding: 0px;
+	color: #D9D9D9;
+}
+.NavigationButton:hover
+{
+	color: #86C232;
+}
+
+.Name 
+{
+	font-family: 'Inter', sans-serif;
+	font-weight: 600;
+	font-size: 45px;
+	color: #D9D9D9;
+	margin: 0px 0px 0px 0px;
+}
+.Title 
+{
+	font-family: 'Inter', sans-serif;
+	font-weight: 300;
+	font-size: 25px;
+	letter-spacing: 2px;
+	color: #D9D9D9;
+	margin: -10px 0px 0px 0px;
+}
+
+.MainContent 
+{
+	width: 100%;
+	height: 100%;
+	top: 210px;
+	left: 0px;
+	border: 0px;
+	position: absolute;
+	background-color: #0a0a0a;
+	text-align: center;
+}
+
+.Projects
+{
+	display: inline-block;
+	border: 0px;
+	margin: 0px 0px -10px 0px;
+}
+
+.Projects:hover .Project:not(:hover)
+{
+	opacity: 0.5;
+}
+
+.Project 
+{
+	position: relative;
+	margin-bottom: 20px;
+	
+	-webkit-transition: opacity 0.4s ease-in-out;
+  	-moz-transition: opacity 0.4s ease-in-out;
+  	-o-transition: opacity 0.4s ease-in-out;
+  	transition: opacity 0.4s ease-in-out;
+}
+
+.ProjectImage 
+{
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+	width: auto;
+	height: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #86C232;
+}
+
+.ProjectTitleBar 
+{
+	pointer-events:none;
+	position: absolute;
+	width: calc(100% - 2px);
+	height: 30px;
+	margin: 1px 1px 0px 1px;
+	background: rgba(34, 38, 41, 1.0);
+	text-align: center;
+	opacity: 0.95;
+}
+
+.ProjectTitle 
+{
+	font-family: 'Inter', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	letter-spacing: 3px;
+	
+	pointer-events:none;
+	position: relative;
+	float: left;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.ProjectTitleSoftwareContainer
+{
+	position: relative;
+	height: 270px;
+}
+
+.ProjectTitleSoftware 
+{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 4%;
+	padding-bottom: 5px;
+	/*padding-right: 5px;
+	padding-bottom: 5px;*/
+}
+
+/*PROJECT SECTION*/
+.SourceCodeLogo 
+{
+	position: absolute;
+	width: 110px;
+	margin: 7px 0px 0px -110px;
+}
+
+.ProjectContent
+{
+	width: 100%;
+	height: 100%;
+	top: 200px;
+	left: 0px;
+	border: 0px;
+	position: absolute;
+	background-color: #0a0a0a;
+	text-align: center;
+}
+
+.ProjectContainer
+{
+	display: inline-block;
+	width: 897px;
+	border: 0px;
+	margin: 0px 0px -10px 25px;
+	text-align: left;
+}
+
+.ProjectBigTitle 
+{
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 28px;
+	letter-spacing: 3px;
+}
+
+.ProjectBigTitleSoftware 
+{
+	position: relative;
+	float: right;
+	padding-top: 10px;
+	width: 5%;
+}
+
+.ProjectDetails
+{
+	font-family: 'Inter', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	letter-spacing: 3px;
+	margin-top: 0px;
+	opacity: 0.7;
+	white-space: pre;
+}
+
+/*Gallery*/
+.ProjectGallery 
+{
+	align-self: center;
+}
+
+.ProjectGalleryThumbnails 
+{
+	margin-top: 0px;
+	height: 102px;
+}
+
+.Preview 
+{
+	align-self: center;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #86C232;
+}
+
+.Thumbnail
+{
+	margin-top: 0px;
+	max-width:100%;
+	max-height:100%;
+	border-color: #86C232;
+}
+
+/*Project Description*/
+.ProjectDescriptionTitle
+{
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	margin-top: 30px;
+	margin-bottom: -10px;
+}
+
+.AboutDescription
+{
+	font-family: 'Inter', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	text-align: left;
+}
+
+.ProjectDescription
+{
+	font-family: 'Inter', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	text-align: justify;
+}
+
+.ProjectDescription b
+{
+	font-weight: 700;
+	-webkit-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+	user-select: all;
+}
+
+.ProjectDescription a
+{
+	color: #86C232; /*#D9D9D9*/
+	text-decoration: none;
+	font-weight: 700;
+	-webkit-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+	user-select: all;
+}
+
+.ProjectConstributionList
+{
+	color: #D9D9D9;
+	font-family: 'Inter', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+}
+
+.ProjectConstributionList a
+{
+	color: #86C232; /*#D9D9D9*/
+	text-decoration: none;
+	font-weight: 700;
+	-webkit-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+	user-select: all;
+}
+
+/*About Section*/
+.AboutContent
+{
+	width: 100%;
+	height: 100%;
+	top: 180px;
+	left: 0px;
+	border: 0px;
+	position: absolute;
+	background-color: #0a0a0a;
+	text-align: center;
+}
+
+.AboutContainer
+{
+	display: inline-block;
+	width: 897px;
+	border: 0px;
+	margin: 0px 0px 0px 25px;
+	text-align: left;
+}
+
+.AboutTitle
+{
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	padding-top: 0px;
+	margin-bottom: -10px;
+}
+
+.CareerTitle
+{
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	margin-top: 5px;
+	margin-bottom: -10px;
+}
+
+.ProfilePicture
+{
+	width: 70%;
+	margin: 23px 0px 0px 25px;
+}
+
+.AboutColumnLeft 
+{
+	float: left;
+	width: 50%;
+}
+
+.AboutColumnRight
+{
+	float: left;
+	width: 50%;
+}
+
+.AboutRow:after
+{
+	content: "";
+    display: table;
+    clear: both;
+}
+
+.AboutCareerList
+{
+	color: #D9D9D9;
+	font-family: 'Inter', sans-serif;
+	/* line-height: 1.5; /* Adjust as needed */
+	font-weight: 300;
+	
+	font-size: 16px;
+	letter-spacing: 0.5px;
+}
+
+.AboutCareerList b
+{
+	font-weight: 700;
+	-webkit-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+	user-select: all;
+}
+
+.AboutCareerListLink
+{
+	color: #86C232; /*#D9D9D9*/
+	text-decoration: none;
+	font-weight: 700;
+	-webkit-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+	user-select: all;
+}
+
+.UnityRibbon
+{
+	position: absolute;
+	margin: 22px 0px 0px 0px; /*margin: 212px 0px 0px -188px;*/
+	width: 60px;
+}
+
+.ProjectSeperator 
+{
+	border: 0px;
+	height: 1px;
+	width: 100%;
+	background-image: linear-gradient(to right, 
+		rgba(255, 255, 255, 0.5), 
+		rgba(255, 255, 255, 0.75), 
+		rgba(255, 255, 255, 0.5));
+}
+
+.Center
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
