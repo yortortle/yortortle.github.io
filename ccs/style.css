@@ -348,6 +348,19 @@ p
 	user-select: all;
 }
 
+.ProjectDescription h3,
+.ProjectDescription ul,
+.ProjectDescription li {
+  color: #D9D9D9;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* .ProjectDescription li {
+  margin-bottom: 0.5em;
+} */
+
 .ProjectConstributionList
 {
 	color: #D9D9D9;
