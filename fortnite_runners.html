@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Troy Hancock - Runners</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="ccs/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="HeaderBackground">
+		<a href="index.html">
+			<p class="Name">TROY HANCOCK</p>
+			<p class="Title">Senior Gameplay Engineer</p>
+		</a>
+	</div>
+	<div class="HeaderIconContainer">
+		<a href="mailto:tnoblehancock@gmail.com">
+			<img class="HeaderIcon" src="images/icons/email_fill_white.png" style="margin-left: 295px;" alt="email"/>
+		</a>
+		<a href="https://github.com/Yortortle" target="_blank">
+			<img class="HeaderIcon" src="images/icons/github_fill_white.png" style="padding-left: 5px;" alt="github"/>
+		</a>
+		<a href="https://www.linkedin.com/in/troy-hancock/" target="_blank">
+			<img class="HeaderIcon" src="images/icons/linkedin_fill_white.png" style="padding-left: 5px;" alt="linkedIn"/>
+		</a>
+	</div>
+<div class="Navigation">
+	<hr class="NavigationSeperator">
+		<a href="index.html"><button class="NavigationButton">About</button></a>
+		<b>-</b>
+		<a href="fortnite.html"><button class="NavigationButtonSelected">Fortnite</button></a>
+		<b>-</b>
+		<a href="lionheart.html"><button class="NavigationButton">Lionheart Games</button></a>
+		<b>-</b>
+		<a href="TroyHancockResume.pdf"><button class="NavigationButton">Resume</button></a>
+		<hr class="NavigationSeperator">
+	</div>
+<div class="AboutContent">
+	<div class="AboutContainer">
+		<div class="ProjectDescription">
+			<p class="SeasonBack"><a href="fortnite.html">&larr; All Fortnite seasons</a></p>
+			<img class="SeasonHero" src="images/fortnite/runners/banner.jpg" alt="Runners key art"/>
+			<p class="ProjectBigTitle">Chapter 7 Season 3: Runners</p>
+			<p class="SeasonMeta">FORTNITE BATTLE ROYALE &middot; v41.00 &middot; JUN 6, 2026</p>
+			<p>After the Zero Point cracked the sky open, the island was reassembled into the <strong>Shattered Coast</strong>. Runners added a new way to progress between matches: Sprites returned as pickups players could bank by extracting, alongside a new set of weapons and movement items.</p>
+
+			<h3>What I Shipped</h3>
+			<ul class="SeasonFeatureList">
+				<li><b><a href="https://fortnite.fandom.com/wiki/Shock_Rock" target="_blank" rel="noopener">Shock Rocks</a></b>: Owned the movement item that grants mid-air leaps. I reworked its networking so throws feel responsive online and added air friction to give its flight path the intended arc.</li>
+				<li><b><a href="https://fortnite.fandom.com/wiki/The_Zero_Point" target="_blank" rel="noopener">Zero Point Vortex</a></b>: Owned the Zero Point vortex and fixed the bugs that teleported vehicles through the rift.</li>
+				<li><b><a href="https://fortnite.fandom.com/wiki/Sprite_Locator" target="_blank" rel="noopener">Sprite Locator</a></b>: Owned the item that reveals a buried chest containing a random Sprite.</li>
+				<li><b><a href="https://fortnite.fandom.com/wiki/Quack_Snacks" target="_blank" rel="noopener">Quack Snacks</a></b>: Owned the consumable that levels up the player's active Sprite.</li>
+				<li><b><a href="https://fortnite.fandom.com/wiki/Wolfe#Boss" target="_blank" rel="noopener">Wolfe Boss</a></b>: Owned the Wolfe boss.</li>
+				<li><b><a href="https://fortnite.fandom.com/wiki/Voyager_Unleashed#Boss" target="_blank" rel="noopener">Supreme Dark Voyager Boss</a></b>: Worked on Voyager Unleashed, a boss added in July 2026 that spawns at a random marked location during the second circle. He starts out shielded in Cube Form, and players deal the most damage by attacking him in that state. Defeating him drops the Dark Voyager's Chaos Rifle Mythic and gives a higher chance at special boss Sprites. I rebuilt his Cube Form attack on projectile movement so it replicates correctly online.</li>
+				<li><b><a href="https://fortnite.fandom.com/wiki/Hot_Bat_Summer" target="_blank" rel="noopener">Hot Bat Summer</a></b>: Owned the season's summer event in Runners Act II.</li>
+			</ul>
+
+			<h3>Trailer</h3>
+			<a class="SeasonVideo SeasonVideoFacade" href="https://www.youtube.com/watch?v=O4PFmJkedWc" target="_blank" data-yt="O4PFmJkedWc" title="Runners trailer" style="background-image: url(https://i.ytimg.com/vi/O4PFmJkedWc/maxresdefault.jpg);"><span class="SeasonPlay">&#9654;</span></a>
+
+			<!-- Gameplay clips: add the files below to videos/fortnite/ and uncomment
+			<h3>Gameplay</h3>
+			<div class="SeasonClips">
+				<figure><video src="videos/fortnite/shock_rocks.mp4" autoplay muted loop playsinline></video><figcaption>Shock Rocks</figcaption></figure>
+				<figure><video src="videos/fortnite/zero_point_vortex.mp4" autoplay muted loop playsinline></video><figcaption>Zero Point vortex</figcaption></figure>
+			</div>
+			-->
+
+			<p><a href="https://www.fortnite.com/b/runners" target="_blank">Season Overview</a></p>
+			<p><a href="https://communities.epicgames.com/thread/v41-00-update-notes-grab-a-sprite-get-out-alive-fortnite-runners-is-here/M7Tt" target="_blank">v41.00 Update Notes</a></p>
+		</div>
+	</div>
+</div>
+<script>
+	document.querySelectorAll('.SeasonVideoFacade').forEach(function (el) {
+		el.addEventListener('click', function (e) {
+			if (location.protocol === 'file:') return;
+			e.preventDefault();
+			var frame = document.createElement('iframe');
+			frame.className = 'SeasonVideo';
+			frame.src = 'https://www.youtube-nocookie.com/embed/' + el.dataset.yt + '?autoplay=1';
+			frame.title = el.title;
+			frame.allow = 'autoplay; fullscreen; encrypted-media';
+			frame.referrerPolicy = 'strict-origin-when-cross-origin';
+			frame.allowFullscreen = true;
+			el.replaceWith(frame);
+		});
+	});
+</script>
+</body>
+
+</html>

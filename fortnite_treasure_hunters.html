@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Troy Hancock - Treasure Hunters</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="ccs/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="HeaderBackground">
+		<a href="index.html">
+			<p class="Name">TROY HANCOCK</p>
+			<p class="Title">Senior Gameplay Engineer</p>
+		</a>
+	</div>
+	<div class="HeaderIconContainer">
+		<a href="mailto:tnoblehancock@gmail.com">
+			<img class="HeaderIcon" src="images/icons/email_fill_white.png" style="margin-left: 295px;" alt="email"/>
+		</a>
+		<a href="https://github.com/Yortortle" target="_blank">
+			<img class="HeaderIcon" src="images/icons/github_fill_white.png" style="padding-left: 5px;" alt="github"/>
+		</a>
+		<a href="https://www.linkedin.com/in/troy-hancock/" target="_blank">
+			<img class="HeaderIcon" src="images/icons/linkedin_fill_white.png" style="padding-left: 5px;" alt="linkedIn"/>
+		</a>
+	</div>
+<div class="Navigation">
+	<hr class="NavigationSeperator">
+		<a href="index.html"><button class="NavigationButton">About</button></a>
+		<b>-</b>
+		<a href="fortnite.html"><button class="NavigationButtonSelected">Fortnite</button></a>
+		<b>-</b>
+		<a href="lionheart.html"><button class="NavigationButton">Lionheart Games</button></a>
+		<b>-</b>
+		<a href="TroyHancockResume.pdf"><button class="NavigationButton">Resume</button></a>
+		<hr class="NavigationSeperator">
+	</div>
+<div class="AboutContent">
+	<div class="AboutContainer">
+		<div class="ProjectDescription">
+			<p class="SeasonBack"><a href="fortnite.html">&larr; All Fortnite seasons</a></p>
+			<img class="SeasonHero" src="images/fortnite/treasure_hunters/banner.jpg" alt="Treasure Hunters key art"/>
+			<p class="ProjectBigTitle">Treasure Hunters</p>
+			<p class="SeasonMeta">FORTNITE MINI SEASON &middot; v43.00 &middot; NOV 1, 2026</p>
+			<p>A pirate-themed mini season built around the <strong>One Piece</strong> collaboration, set on the new 80-player Crossbones Isle. Players could take on Devil Fruit powers and turn into Luffy or Ace, collect a new set of Sprites, and face A$AP Rocky as the season's first boss.</p>
+
+			<h3>What I Shipped</h3>
+			<ul class="SeasonFeatureList">
+				<li><b>Gum-Gum Fruit (Luffy Mythic)</b>: Full engineering ownership of the Mythic that turns players into Monkey D. Luffy: the charged <em>Gum Gum Pistol</em> stretch punch and melee combos, the <em>Gum Gum Rocket</em> launch, which finds two anchor points on the ground and slingshots the player across the island, and the <em>Gum Gum Battleaxe</em> mid-air ground slam. I tuned the launch across slopes, backward movement and tight spaces, and fixed IK on the stretched arms so they track their targets.</li>
+				<li><b>A$AP Rocky's Shock Rocket</b>: Engineered the Exotic rocket launcher that the A$AP Rocky boss wields on Crossbones Isle. It drops to players, and its shock charges can be spent on a jump boost.</li>
+				<li><b><a href="https://fortnite.fandom.com/wiki/Sprites" target="_blank" rel="noopener">Sprites Collection</a></b>: Owned the season's Sprite collection: the Sprite Dex with seasonal numbering, chase and secret Sprites, badges stamped on Victory Royales, and a new pity system that guarantees Sprites from season chests.</li>
+				<li><b>Transponder Snail Sprite</b>: Implemented the One Piece Den Den Mushi Sprite, which grants extra resources on pickup and shares a bonus with teammates who have it equipped.</li>
+			</ul>
+
+			<h3>Trailer</h3>
+			<a class="SeasonVideo SeasonVideoFacade" href="https://www.youtube.com/watch?v=rFHOT4Mb_yI" target="_blank" data-yt="rFHOT4Mb_yI" title="Treasure Hunters trailer" style="background-image: url(https://i.ytimg.com/vi/rFHOT4Mb_yI/maxresdefault.jpg);"><span class="SeasonPlay">&#9654;</span></a>
+
+			<!-- Gameplay clips: add the files below to videos/fortnite/ and uncomment
+			<h3>Gameplay</h3>
+			<div class="SeasonClips">
+				<figure><video src="videos/fortnite/gumgum_rocket.mp4" autoplay muted loop playsinline></video><figcaption>Gum-Gum Rocket stretch launch</figcaption></figure>
+				<figure><video src="videos/fortnite/gumgum_punches.mp4" autoplay muted loop playsinline></video><figcaption>Gum-Gum Fruit melee combos</figcaption></figure>
+			</div>
+			-->
+
+			<p><a href="https://www.fortnite.com/b/treasure-hunters" target="_blank">Season Overview</a></p>
+			<p><a href="https://www.fortnite.com/news/fortnite-treasure-hunters-the-greatest-adventure-of-all-time" target="_blank">Launch Announcement</a></p>
+		</div>
+	</div>
+</div>
+<script>
+	document.querySelectorAll('.SeasonVideoFacade').forEach(function (el) {
+		el.addEventListener('click', function (e) {
+			if (location.protocol === 'file:') return;
+			e.preventDefault();
+			var frame = document.createElement('iframe');
+			frame.className = 'SeasonVideo';
+			frame.src = 'https://www.youtube-nocookie.com/embed/' + el.dataset.yt + '?autoplay=1';
+			frame.title = el.title;
+			frame.allow = 'autoplay; fullscreen; encrypted-media';
+			frame.referrerPolicy = 'strict-origin-when-cross-origin';
+			frame.allowFullscreen = true;
+			el.replaceWith(frame);
+		});
+	});
+</script>
+</body>
+
+</html>
